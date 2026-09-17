@@ -1,6 +1,8 @@
+import './Home.css'
+
 export function HomePage() {
     return (
-        <main>
+        <main className="main_content">
             <h1>Home</h1>
         </main>
     )

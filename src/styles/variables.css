@@ -1,0 +1,70 @@
+:root {
+    --surface-container-high: #2a2930;
+    --secondary: #4cd7f6;
+    --surface-tint: #ddb7ff;
+    --error-container: #93000a;
+    --primary-fixed: #f0dbff;
+    --on-tertiary-container: #570032;
+    --tertiary: #ffb0cd;
+    --on-surface-variant: #cfc2d6;
+    --secondary-fixed: #acedff;
+    --surface-container-lowest: #0e0e14;
+    --on-primary-container: #400071;
+    --on-tertiary-fixed: #3e0022;
+    --primary-container: #b76dff;
+    --on-surface: #e4e1eb;
+    --tertiary-container: #f751a1;
+    --on-error-container: #ffdad6;
+    --tertiary-fixed-dim: #ffb0cd;
+    --on-secondary-fixed: #001f26;
+    --on-tertiary-fixed-variant: #8c0053;
+    --on-primary-fixed: #2c0051;
+    --primary-fixed-dim: #ddb7ff;
+    --on-tertiary: #640039;
+    --surface-container-highest: #35343b;
+    --secondary-container: #03b5d3;
+    --surface-dim: #131319;
+    --surface-container-low: #1b1b22;
+    --surface-container: #1f1f26;
+    --surface: #131319;
+    --background: #131319;
+    --surface-variant: #35343b;
+    --on-secondary-fixed-variant: #004e5c;
+    --inverse-on-surface: #303037;
+    --on-error: #690005;
+    --error: #ffb4ab;
+    --inverse-primary: #842bd2;
+    --outline: #988d9f;
+    --outline-variant: #4d4354;
+    --inverse-surface: #e4e1eb;
+    --on-background: #e4e1eb;
+    --on-secondary-container: #00424e;
+    --on-secondary: #003640;
+    --surface-bright: #393840;
+    --tertiary-fixed: #ffd9e4;
+    --primary: #ddb7ff;
+    --secondary-fixed-dim: #4cd7f6;
+    --on-primary: #490080;
+    --on-primary-fixed-variant: #6900b3;
+
+    /* --- Radios --- */
+    --radius: 0.125rem;
+    --radius-lg: 0.25rem;
+    --radius-xl: 0.5rem;
+    --radius-full: 0.75rem;
+
+    /* --- Espaciados --- */
+    --space-margin: 2.5rem;
+    --space-margin-mobile: 1rem;
+    --space-gutter: 1.5rem;
+    --space-gutter-mobile: 1rem;
+    --space-xl: 2.5rem;
+    --space-lg: 1.5rem;
+    --space-md: 1rem;
+    --space-sm: 0.5rem;
+    --space-xs: 0.25rem;
+
+    /* --- Tipografía --- */
+    --font-title: "Space Grotesk", sans-serif;
+    --font-body: "Inter", sans-serif;
+}

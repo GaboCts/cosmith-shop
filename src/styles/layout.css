@@ -1,0 +1,47 @@
+@import "./variables.css";
+
+.main {
+  width: 100%;
+  padding-top: 7rem;
+  background-color: var(--surface);
+}
+
+.ambient-field {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--surface);
+}
+
+.ambient-blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(100px);
+}
+
+.ambient-blob--primary {
+  top: -8rem;
+  left: 25%;
+  width: 24rem;
+  height: 24rem;
+  background-color: rgba(183, 109, 255, 0.2);
+}
+
+.ambient-blob--secondary {
+  top: 12rem;
+  right: 2.5rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: rgba(76, 215, 246, 0.15);
+  filter: blur(100px);
+}
+
+.ambient-blob--tertiary {
+  top: 50%;
+  left: 2.5rem;
+  width: 16rem;
+  height: 16rem;
+  background-color: rgba(247, 81, 161, 0.1);
+  filter: blur(90px);
+}

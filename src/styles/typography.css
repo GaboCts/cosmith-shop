@@ -1,0 +1,71 @@
+.t-display-hero {
+    font: 700 56px/64px var(--font-title);
+    letter-spacing: -0.03em;
+}
+
+.t-display-hero-mobile {
+    font: 700 36px/44px var(--font-title);
+    letter-spacing: -0.02em;
+}
+
+.t-headline-lg {
+    font: 700 32px/40px var(--font-title);
+    letter-spacing: -0.02em;
+}
+
+.t-headline-lg-mobile {
+    font: 700 26px/34px var(--font-title);
+    letter-spacing: -0.01em;
+}
+
+.t-headline-md {
+    font: 600 24px/32px var(--font-title);
+    letter-spacing: -0.01em;
+}
+
+.t-headline-sm {
+    font: 600 18px/26px var(--font-title);
+    letter-spacing: 0;
+}
+
+.t-title-md {
+    font: 600 16px/24px var(--font-title);
+    letter-spacing: 0.01em;
+}
+
+.t-label-lg {
+    font: 600 14px/20px var(--font-title);
+    letter-spacing: 0.06em;
+}
+
+.t-label-md {
+    font: 600 12px/16px var(--font-title);
+    letter-spacing: 0.08em;
+}
+
+.t-label-technical {
+    font: 700 10px/14px var(--font-title);
+    letter-spacing: 0.14em;
+}
+
+.t-body-lg {
+    font: 400 16px/26px var(--font-body);
+    letter-spacing: 0;
+}
+
+.t-body-md {
+    font: 400 14px/22px var(--font-body);
+    letter-spacing: 0;
+}
+
+.t-body-sm {
+    font: 400 12px/18px var(--font-body);
+    letter-spacing: 0.01em;
+}
+
+@media (min-width: 640px) {
+    .t-display-hero-mobile {
+        font: 700 56px/64px var(--font-title);
+        letter-spacing: -0.03em;
+    }
+}
