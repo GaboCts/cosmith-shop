@@ -32,6 +32,11 @@
     min-width: 0;
 }
 
+.cosmith-logo{
+    height: 48px;
+    width: auto;
+}
+
 .brand-title {
     display: flex;
     align-items: center;
@@ -39,6 +44,14 @@
     flex-shrink: 0;
     font-weight: 800;
     font-size: 28px;
+
+    span {
+        margin-left: -6px;
+        background: linear-gradient(to right, var(--primary-container), var(--secondary-container), var(--tertiary-container));
+        background-clip: text;
+        color: transparent;
+        filter: drop-shadow(0 0 24px rgba(183, 109, 255, 0.4));
+    }
 }
 
 .main-nav {
@@ -64,7 +77,9 @@
     color: var(--on-surface-variant);
     transition: color 0.2s ease;
     border-bottom: 2px solid transparent;
-    font: 600 14px/20px var(--font-title);
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--font-title);
     letter-spacing: 0.06em;
 }
 
@@ -110,14 +125,15 @@
 .profile__title {
     color: var(--on-surface-variant);
     line-height: 1;
-    letter-spacing: 0.01em;
-    font-size: 15px;
-    font-weight: 700;
+    height: 25px;
+    font-family: var(--font-title);
+    margin-right: 8px;
 }
 
 .profile__avatar-link {
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 0.125rem;
     border-radius: var(--radius-full);
     border: 1px solid rgba(221, 183, 255, 0.4);

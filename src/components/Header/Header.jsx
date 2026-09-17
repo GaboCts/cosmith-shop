@@ -12,13 +12,39 @@ export function Header() {
                     <div className="site-header__left">
 
                         <a className="brand-title" href="/">
-                            Cosmith
+                            <svg className="cosmith-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+                                <defs>
+                                    <linearGradient id="outerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00D2FF" />
+                                        <stop offset="50%" stop-color="#7B2CBF" />
+                                        <stop offset="100%" stop-color="#F72585" />
+                                    </linearGradient>
+                                    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#9D4EDD" />
+                                        <stop offset="100%" stop-color="#7209B7" />
+                                    </linearGradient>
+                                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                                        <feGaussianBlur stdDeviation="6" result="blur" />
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                    </filter>
+                                </defs>
+                                <polygon points="100,20 165,57.5 165,132.5 100,170 35,132.5 35,57.5"
+                                    fill="url(#outerGlow)" filter="url(#glow)" />
+                                <polygon points="100,26 159,60 159,130 100,164 41,130 41,60" fill="#0B0E17" />
+                                <polygon points="100,38 149,66 149,124 100,152 51,124 51,66" fill="none"
+                                    stroke="#00E5FF" stroke-width="2.5" stroke-linejoin="round" />
+                                <path
+                                    d="M 100,75 C 100,90 102,98 117,100 C 102,102 100,110 100,125 C 100,110 98,102 83,100 C 98,98 100,90 100,75 Z"
+                                    fill="url(#starGrad)" />
+                                <circle cx="100" cy="100" r="5" fill="#FFFFFF" />
+                            </svg>
+                            COS<span>MITH</span>
                         </a>
 
                     </div>
                     
                     <nav className="main-nav">
-                        <a href="" className="main-nav__link">
+                        <a href="/" className="main-nav__link">
                             Home
                         </a>
 
@@ -33,32 +59,34 @@ export function Header() {
                     </nav>
 
                     <div className="site-header__right">
-                        <div className="profile">
+                        <a href="/profile" className="profile__avatar-link">
                             <div className="profile__info">
-                                <div className="profile__title">Profile</div>
+                                <div className="profile__title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6" width="100%" height="100%">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                    </svg>
+                                </div>
                             </div>
-                            <a className="profile__avatar-link" href="#" data-path="perfil">
-                                <img className="profile__avatar" src={AVATAR_URL} alt="Profile" />
-                            </a>
-                        </div>
+                            <img className="profile__avatar" src={AVATAR_URL} alt="Profile" />
+                        </a>
                     </div>
                 </div>
 
                 <div className="category-tabs">
                     
-                    <a href="" className="category-tabs__item">
+                    <a href="/gui-textures" className="category-tabs__item">
                         GUI TEXTURES
                     </a>
 
-                    <a href="" className="category-tabs__item">
+                    <a href="/items" className="category-tabs__item">
                         ITEMS
                     </a>
 
-                    <a href="" className="category-tabs__item">
+                    <a href="/3d-textures" className="category-tabs__item">
                         3D TEXTURES
                     </a>
 
-                    <a href="" className="category-tabs__item">
+                    <a href="/configs" className="category-tabs__item">
                         CONFIGS
                     </a>
                 </div>
