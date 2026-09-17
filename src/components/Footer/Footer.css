@@ -1,0 +1,196 @@
+.site-footer {
+    width: 100%;
+    background-color: var(--surface-container-lowest);
+    border-top: 1px solid rgba(221, 183, 255, 0.2);
+    margin-top: 2.5rem;
+}
+
+.site-footer__inner {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.site-footer__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .site-footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .site-footer__brand-col {
+        grid-column: span 2;
+    }
+}
+
+.site-footer__brand-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.cosmith-logo__footer{
+    height: 20px;
+    width: auto;
+}
+
+.brand-title__footer {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-shrink: 0;
+    font-weight: 800;
+    font-size: 20px;
+
+    span {
+        margin-left: -6px;
+        background: linear-gradient(to right, var(--primary-container), var(--secondary-container), var(--tertiary-container));
+        background-clip: text;
+        color: transparent;
+        filter: drop-shadow(0 0 24px rgba(183, 109, 255, 0.4));
+    }
+}
+
+.site-footer__tagline {
+    color: var(--on-surface-variant);
+    max-width: 28rem;
+    margin: 0;
+    font: 400 14px/22px var(--font-body);
+    letter-spacing: 0;
+}
+
+.site-footer__newsletter {
+    padding-top: 0.25rem;
+}
+
+.site-footer__newsletter-title {
+    color: var(--on-surface);
+    margin-bottom: 0.25rem;
+    font: 600 14px/20px var(--font-title);
+    letter-spacing: 0.06em;
+}
+
+.site-footer__newsletter-desc {
+    color: var(--outline);
+    margin: 0 0 0.5rem;
+    font: 400 12px/18px var(--font-body);
+    letter-spacing: 0.01em;
+}
+
+.site-footer__form {
+    display: flex;
+    max-width: 28rem;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.site-footer__input {
+    background-color: var(--surface-container-low);
+    color: var(--on-surface);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    flex: 1;
+    border: 1px solid rgba(77, 67, 84, 0.4);
+    font: 400 12px/18px var(--font-body);
+    letter-spacing: 0.01em;
+}
+
+.site-footer__input::placeholder {
+    color: var(--outline);
+}
+
+.site-footer__input:focus {
+    outline: none;
+    border-color: var(--secondary);
+}
+
+.site-footer__submit {
+    background-color: var(--primary-container);
+    color: var(--on-primary);
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius);
+    text-transform: none;
+    box-shadow: 0 0 16px rgba(183, 109, 255, 0.4);
+    transition: background-color 0.2s ease;
+    font: 600 14px/20px var(--font-title);
+    letter-spacing: 0.06em;
+}
+
+.site-footer__submit:hover {
+    background-color: var(--primary);
+}
+
+.site-footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.site-footer__col-title {
+    color: var(--on-surface);
+    font: 600 18px/26px var(--font-title);
+    letter-spacing: 0;
+}
+
+.site-footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    color: var(--on-surface-variant);
+    font: 400 14px/22px var(--font-body);
+    letter-spacing: 0;
+}
+
+.site-footer__link {
+    padding: 0.125rem 0;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.site-footer__link:hover {
+    color: var(--secondary);
+}
+
+.site-footer__bottom {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(77, 67, 84, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    color: var(--on-surface-variant);
+    font: 700 10px/14px var(--font-title);
+    letter-spacing: 0.14em;
+}
+
+@media (min-width: 640px) {
+    .site-footer__bottom {
+        flex-direction: row;
+    }
+}
+
+.site-footer__bottom-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.site-footer__bottom-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.site-footer__bottom-link {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.site-footer__bottom-link:hover {
+    color: var(--on-surface);
+}

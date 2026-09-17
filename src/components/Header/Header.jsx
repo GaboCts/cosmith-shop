@@ -1,27 +1,25 @@
 import './Header.css'
 
 const AVATAR_URL =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBJchO07YjI-hIdlHypL0HJx08W9oDg4_zcd_nxEnK5JE2_sNsUfk2d6loeX3xQ8xINksnPvGE3WhKvyCzf73ksBmTKkWPyokpOWGt_vtONcgRAiiqxu-5VLXrnQcOGtpVn0n_yLoK2_fsb01sDJ_iRXHXcL3vPyYr1TG9hFqrXCY4zChIj-FSAuCqVUvOKIrr7j9Lv-jp-HwAFFy1nBJKvo2ZGnak5JfUPz62lqIRsZzGzELTSu9XniQ'
+  'https://media.discordapp.net/attachments/1096169021143011428/1550224409397301380/Chamber.jpeg?ex=6aad8e7c&is=6aac3cfc&hm=e2559666122a11c72375fc31fa36875962f550b01b1fc161379d1f77692152be&=&format=webp&width=1024&height=1020'
 
 export function Header() {
     return (
         <header className="site-header">
             <div className="container site-header__inner">
                 <div className="site-header__top">
-                    
                     <div className="site-header__left">
-
                         <a className="brand-title" href="/">
                             <svg className="cosmith-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
                                 <defs>
                                     <linearGradient id="outerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#00D2FF" />
-                                        <stop offset="50%" stop-color="#7B2CBF" />
-                                        <stop offset="100%" stop-color="#F72585" />
+                                        <stop offset="0%" stopColor="#00D2FF" />
+                                        <stop offset="50%" stopColor="#7B2CBF" />
+                                        <stop offset="100%" stopColor="#F72585" />
                                     </linearGradient>
                                     <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#9D4EDD" />
-                                        <stop offset="100%" stop-color="#7209B7" />
+                                        <stop offset="0%" stopColor="#9D4EDD" />
+                                        <stop offset="100%" stopColor="#7209B7" />
                                     </linearGradient>
                                     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
                                         <feGaussianBlur stdDeviation="6" result="blur" />
@@ -32,7 +30,7 @@ export function Header() {
                                     fill="url(#outerGlow)" filter="url(#glow)" />
                                 <polygon points="100,26 159,60 159,130 100,164 41,130 41,60" fill="#0B0E17" />
                                 <polygon points="100,38 149,66 149,124 100,152 51,124 51,66" fill="none"
-                                    stroke="#00E5FF" stroke-width="2.5" stroke-linejoin="round" />
+                                    stroke="#00E5FF"   strokeWidth="2.5" strokeLinejoin="round" />
                                 <path
                                     d="M 100,75 C 100,90 102,98 117,100 C 102,102 100,110 100,125 C 100,110 98,102 83,100 C 98,98 100,90 100,75 Z"
                                     fill="url(#starGrad)" />
@@ -43,20 +41,23 @@ export function Header() {
 
                     </div>
                     
-                    <nav className="main-nav">
-                        <a href="/" className="main-nav__link">
-                            Home
-                        </a>
+                    <div>
+                        <nav className="main-nav">
+                            <a href="/" className="main-nav__link">
+                                Home
+                            </a>
 
-                        <a href="/pixel-studio" className="main-nav__link">
-                            Pixel Title Studio
-                            <span className="main-nav__badge">New</span>
-                        </a>
+                            <a href="/pixel-studio" className="main-nav__link">
+                                Pixel Title Studio
+                                <span className="main-nav__badge">New</span>
+                            </a>
 
-                        <a target="_blank" href="https://www.instagram.com/" className="main-nav__link">
-                            Discord Community
-                        </a>
-                    </nav>
+                            <a target="_blank" href="https://www.instagram.com/" className="main-nav__link">
+                                Discord Community
+                            </a>
+                        </nav>
+                    </div>
+                    
 
                     <div className="site-header__right">
                         <a href="/profile" className="profile__avatar-link">
@@ -71,6 +72,7 @@ export function Header() {
                         </a>
                     </div>
                 </div>
+
 
                 <div className="category-tabs">
                     
