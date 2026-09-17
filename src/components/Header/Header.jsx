@@ -4,6 +4,7 @@ const AVATAR_URL =
   'https://media.discordapp.net/attachments/1096169021143011428/1550224409397301380/Chamber.jpeg?ex=6aad8e7c&is=6aac3cfc&hm=e2559666122a11c72375fc31fa36875962f550b01b1fc161379d1f77692152be&=&format=webp&width=1024&height=1020'
 
 export function Header() {
+
     return (
         <header className="site-header">
             <div className="container site-header__inner">
