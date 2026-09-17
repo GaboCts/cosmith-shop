@@ -64,7 +64,7 @@ export function Footer() {
                     </div>
 
                     <div className="site-footer__col">
-                        <div className="site-footer__col-title">ECOSISTEMA</div>
+                        <div className="site-footer__col-title">ENVIROMENT</div>
                         <ul className="site-footer__links">
                             <li className="site-footer__link">
                                 List 2
