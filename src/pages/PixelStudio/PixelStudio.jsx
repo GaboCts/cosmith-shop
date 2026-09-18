@@ -1,5 +1,7 @@
 export function PixelStudio() {
     return (
-        <h1>Pixel Studio</h1>
+        <main className="main_content">
+            <h1>Pixel Studio</h1>
+        </main>
     )
 }

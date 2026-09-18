@@ -1,7 +1,7 @@
 import { Header } from "./components/Header/Header"
 import { Footer } from "./components/Footer/Footer"
 
-import { HomePage } from "./pages/Home/HomePage"
+import { HomePage } from "./pages/HomePage/HomePage"
 import { PixelStudio } from "./pages/PixelStudio/PixelStudio"
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage"
 

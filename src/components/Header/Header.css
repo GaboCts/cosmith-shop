@@ -177,8 +177,3 @@
     outline-color: var(--primary-container);
     transition: border-color 0.2s ease;
 }
-
-.isActive {
-    color: var(--primary-container);
-    border-bottom-color: var(--primary-container);
-}

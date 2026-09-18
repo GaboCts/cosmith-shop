@@ -1,9 +1,11 @@
 import './Header.css'
+import styles from './Header.module.css'
 
 const AVATAR_URL =
   'https://media.discordapp.net/attachments/1096169021143011428/1550224409397301380/Chamber.jpeg?ex=6aad8e7c&is=6aac3cfc&hm=e2559666122a11c72375fc31fa36875962f550b01b1fc161379d1f77692152be&=&format=webp&width=1024&height=1020'
 
 export function Header() {
+    const currentPath = window.location.pathname
 
     return (
         <header className="site-header">
@@ -44,17 +46,17 @@ export function Header() {
                     
                     <div>
                         <nav className="main-nav">
-                            <a href="/" className="main-nav__link">
-                                Home
+                            <a href="/" className={currentPath === "/" ? `${styles.isActive} main-nav__link` : 'main-nav__link'}>
+                                HOME
                             </a>
 
-                            <a href="/pixel-studio" className="main-nav__link">
-                                Pixel Title Studio
+                            <a href="/pixel-studio" className={currentPath === "/pixel-studio" ? `${styles.isActive} main-nav__link` : 'main-nav__link'}>
+                                PIXEL STUDIO
                                 <span className="main-nav__badge">New</span>
                             </a>
 
                             <a target="_blank" href="https://www.instagram.com/" className="main-nav__link">
-                                Discord Community
+                                DISCORD
                             </a>
                         </nav>
                     </div>
@@ -77,19 +79,19 @@ export function Header() {
 
                 <div className="category-tabs">
                     
-                    <a href="/gui-textures" className="category-tabs__item">
+                    <a href="/gui-textures" className={currentPath === "/gui-textures" ? `${styles.isActive} category-tabs__item` : 'category-tabs__item'}>
                         GUI TEXTURES
                     </a>
 
-                    <a href="/items" className="category-tabs__item">
+                    <a href="/items" className={currentPath === "/items" ? `${styles.isActive} category-tabs__item` : 'category-tabs__item'}>
                         ITEMS
                     </a>
 
-                    <a href="/3d-textures" className="category-tabs__item">
+                    <a href="/3d-textures" className={currentPath === "/3d-textures" ? `${styles.isActive} category-tabs__item` : 'category-tabs__item'}>
                         3D TEXTURES
                     </a>
 
-                    <a href="/configs" className="category-tabs__item">
+                    <a href="/configs" className={currentPath === "/configs" ? `${styles.isActive} category-tabs__item` : 'category-tabs__item'}>
                         CONFIGS
                     </a>
                 </div>
