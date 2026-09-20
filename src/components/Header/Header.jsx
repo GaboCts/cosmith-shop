@@ -55,7 +55,7 @@ export function Header() {
                                 <span className="main-nav__badge">New</span>
                             </a>
 
-                            <a target="_blank" href="https://www.instagram.com/" className="main-nav__link">
+                            <a target="_blank" href="https://discord.gg/qHAy2PnB83" className="main-nav__link">
                                 DISCORD
                             </a>
                         </nav>

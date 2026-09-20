@@ -1,5 +1,9 @@
-.main_content {
+.main__content {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+}
+
+.home__title {
+    font-size: 50px;
 }

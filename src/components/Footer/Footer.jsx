@@ -46,7 +46,7 @@ export function Footer() {
                             </p>
                             <form className="site-footer__form">
                                 <input className="site-footer__input" type="email"
-                                    placeholder="tripulante@estacion.io" />
+                                    placeholder="cosmither@station.com" />
                                 <button type="button" className="site-footer__submit">
                                     Subscribe
                                 </button>

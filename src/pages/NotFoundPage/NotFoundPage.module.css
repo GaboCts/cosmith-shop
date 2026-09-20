@@ -1,0 +1,25 @@
+.main__content {
+    justify-items: center;
+}
+
+.NotFoundPage {
+    height: 80vh;
+    width: auto;
+}
+
+.NotFound__home {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    height: 28px;
+    padding: 12px;
+    color: var(--on-primary);
+    border-radius: var(--radius);
+    background-color: var(--primary-container);
+    box-shadow: 0 0 10px rgba(183, 109, 255, 0.7);
+
+    &:hover {
+        color: var(--on-surface-variant);
+    }
+}
