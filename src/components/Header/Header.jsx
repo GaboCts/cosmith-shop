@@ -2,7 +2,7 @@ import './Header.css'
 import styles from './Header.module.css'
 
 const AVATAR_URL =
-  'https://media.discordapp.net/attachments/1096169021143011428/1550224409397301380/Chamber.jpeg?ex=6aad8e7c&is=6aac3cfc&hm=e2559666122a11c72375fc31fa36875962f550b01b1fc161379d1f77692152be&=&format=webp&width=1024&height=1020'
+  'https://media.discordapp.net/attachments/1096169021143011428/1550224409397301380/Chamber.jpeg?ex=6ab182fc&is=6ab0317c&hm=7f1032d3ab7c73b219af3410272cf011e0413fcb0fc95f755f56d694a5bdae5b&=&format=webp&width=1024&height=1020'
 
 export function Header() {
     const currentPath = window.location.pathname
@@ -13,32 +13,7 @@ export function Header() {
                 <div className="site-header__top">
                     <div className="site-header__left">
                         <a className="brand-title" href="/">
-                            <svg className="cosmith-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
-                                <defs>
-                                    <linearGradient id="outerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#00D2FF" />
-                                        <stop offset="50%" stopColor="#7B2CBF" />
-                                        <stop offset="100%" stopColor="#F72585" />
-                                    </linearGradient>
-                                    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#9D4EDD" />
-                                        <stop offset="100%" stopColor="#7209B7" />
-                                    </linearGradient>
-                                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                                        <feGaussianBlur stdDeviation="6" result="blur" />
-                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                                    </filter>
-                                </defs>
-                                <polygon points="100,20 165,57.5 165,132.5 100,170 35,132.5 35,57.5"
-                                    fill="url(#outerGlow)" filter="url(#glow)" />
-                                <polygon points="100,26 159,60 159,130 100,164 41,130 41,60" fill="#0B0E17" />
-                                <polygon points="100,38 149,66 149,124 100,152 51,124 51,66" fill="none"
-                                    stroke="#00E5FF"   strokeWidth="2.5" strokeLinejoin="round" />
-                                <path
-                                    d="M 100,75 C 100,90 102,98 117,100 C 102,102 100,110 100,125 C 100,110 98,102 83,100 C 98,98 100,90 100,75 Z"
-                                    fill="url(#starGrad)" />
-                                <circle cx="100" cy="100" r="5" fill="#FFFFFF" />
-                            </svg>
+                            <img src="src\assets\logo.svg" alt="Cosmith logo" className="cosmith-logo" />
                             COS<span>MITH</span>
                         </a>
 

@@ -148,7 +148,6 @@
 .site-footer__link {
     padding: 0.125rem 0;
     transition: color 0.2s ease;
-    cursor: pointer;
 }
 
 .site-footer__link:hover {

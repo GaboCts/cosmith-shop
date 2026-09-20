@@ -1,4 +1,5 @@
 .isActive {
-    color: var(--primary-container);
-    border-bottom-color: var(--primary-container);
+    color: var(--secondary);
+    border-bottom-color: var(--secondary);
+    border-width: 2px;
 }
